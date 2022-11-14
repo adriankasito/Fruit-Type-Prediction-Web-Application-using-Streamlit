@@ -11,7 +11,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_squared_error, r2_score
 import time
 st.title('Welcome to the fruit type prediction application')
-fruits = pd.read_excel(r'C:\adrian kasito\adrian\fruit_data_with_colors.xlsx')
+fruits = pd.read_excel('fruit_data_with_colors.xlsx')
 
 
 

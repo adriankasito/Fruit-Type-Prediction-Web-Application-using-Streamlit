@@ -17,7 +17,7 @@ fruits = pd.read_excel('fruit_data_with_colors.xlsx')
 
 
 st.write("This is an application for predicting the fruit type using machine learning. Let's try and see!")
-image = Image.open(r'C:\Users\Mr. Capable\Documents\fruits_data_science\pic.jpg')
+image = Image.open('pic.jpg')
 st.image(image, width='50%', caption='Fruits', use_column_width=True)
 check_data = st.checkbox("See the sample data")
 if check_data:

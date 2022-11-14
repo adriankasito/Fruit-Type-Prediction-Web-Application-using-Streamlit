@@ -4,8 +4,7 @@ protobuf
 pip
 openpyxl
 matplotlib
-sklearn.linear_model
-sklearn.neighbors
+sklearn
 plotly
 scipy
 pandas

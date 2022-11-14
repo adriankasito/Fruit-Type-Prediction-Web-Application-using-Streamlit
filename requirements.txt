@@ -5,6 +5,7 @@ pip
 openpyxl
 matplotlib
 sklearn.linear_model
+sklearn.neighbors
 plotly
 scipy
 pandas

@@ -1,6 +1,8 @@
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
+from sklearn.neighbors import KNeighborsClassifier
+
 plt.rcParams['figure.figsize'] = (20.0, 10.0)
 import streamlit as st
 from PIL import Image
@@ -26,6 +28,7 @@ fruit_mass    = st.slider("What is the fruit mass in grams?",int(fruits.mass.min
 fruit_width    = st.slider("What is the fruit_width in centimeters?",float(fruits.width.min()),float(fruits.width.max()),float(fruits.width.mean()) )
 fruit_height = st.slider('What is the fruit height in centimeters',float(fruits.height.min()),float(fruits.height.max()),float(fruits.height.mean()) )
 fruit_color_score = st.slider('What is the fruit_color_score',float(fruits.color_score.min()), float(fruits.color_score.max()))
+
 
 #splitting your data
 # Create train_test_split

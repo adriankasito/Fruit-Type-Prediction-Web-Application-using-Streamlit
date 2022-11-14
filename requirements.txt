@@ -8,3 +8,4 @@ sklearn
 plotly
 scipy
 pandas
+KNeighborsClassifier

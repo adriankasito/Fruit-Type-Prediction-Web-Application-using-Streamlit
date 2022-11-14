@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 plt.rcParams['figure.figsize'] = (20.0, 10.0)
 import streamlit as st
 from PIL import Image
-from sklearn.linear_model import LinearRegression
+#from sklearn.linear_model import LinearRegression
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_squared_error, r2_score
 import time

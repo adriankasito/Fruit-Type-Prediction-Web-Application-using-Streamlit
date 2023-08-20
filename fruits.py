@@ -36,7 +36,7 @@ scaler = StandardScaler()
 X_scaled = scaler.fit_transform(fruits[['mass', 'width', 'height', 'color_score']])
 
 # Splitting your data
-X_train, X_test, y_train, y_test = train_test_split(X_scaled, fruits['fruit_label'], test_size=0.15, random_state=2)
+X_train, X_test, y_train, y_test = train_test_split(X_scaled, fruits['fruit_label'], test_size=0.20, random_state=42)
 
 # Create and fit KNeighborsClassifier
 model = KNeighborsClassifier(n_neighbors=5)

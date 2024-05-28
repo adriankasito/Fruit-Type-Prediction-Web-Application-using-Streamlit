@@ -8,14 +8,14 @@ from sklearn.preprocessing import StandardScaler
 
 plt.rcParams['figure.figsize'] = (20.0, 10.0)
 import streamlit as st
-from PIL import Image
+#from PIL import Image
 
-st.title('Welcome to the fruit type prediction application')
+st.markdown('<h1 style="color:cyan; font-style:italic;">🍎🍊🍋 Welcome to the Fruit Type Prediction Application</h1>', unsafe_allow_html=True)
 fruits = pd.read_excel('fruit_data_with_colors.xlsx')
 
-st.write("This is an application for predicting the fruit type using machine learning. Let's try and see!")
-image = Image.open('pic.jpg')
-st.image(image, width='50%', caption='Fruits', use_column_width=True)
+st.write("This is my beginner application for predicting the fruit type using machine learning. Let's try and see!")
+#image = Image.open('pic.gif')
+st.image('pic.gif', width='50%', caption='Fruits', use_column_width=True)
 check_data = st.checkbox("See the sample data")
 if check_data:
     st.write(fruits)

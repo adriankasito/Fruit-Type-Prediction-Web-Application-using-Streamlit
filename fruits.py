@@ -15,7 +15,10 @@ fruits = pd.read_excel('fruit_data_with_colors.xlsx')
 
 st.write("This is my beginner application for predicting the fruit type using machine learning. Let's try and see!")
 #image = Image.open('pic.gif')
-st.image('pic.gif', width='50%', caption='Fruits', use_column_width=True)
+#st.image('pic.gif', width='50%', caption='Fruits', use_column_width=True)
+col1, col2 = st.columns(2)
+with col1:
+    st.image('pic.gif', caption='Fruits')
 check_data = st.checkbox("See the sample data")
 if check_data:
     st.write(fruits)
